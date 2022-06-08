@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P4</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50,4,3,2];
+        document.write(arr + "<br>");
+        
+        for(let i=0;i<arr.length;i++) {
+            let cnt = 0;
+            for(let j=0;j<arr.length;j++) {
+                if(arr[i] < arr[j])
+                    cnt++;
+            }
+            if(cnt>=3) 
+                document.write(arr[i] + ",");
+        }        
+    </script>
+</body>
+</html>

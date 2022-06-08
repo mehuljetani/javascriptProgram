@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P13</title>
+</head>
+<body>
+    <script>
+        let n = 7,k = 0;
+        for(let i=1;i<=n*2-1;i++) {
+                (i<=n) ? k = n-i+1 : k++;
+            for(let j=1;j<=n;j++) {
+                if(j<=k) {
+                    if(j % 2 != 0)
+                        document.write(String.fromCharCode(64+n-k+j) + " ");
+                    else
+                        document.write((n-k+j) + " ");
+                } else
+                    document.write("&nbsp");
+            }
+            document.write("<br>");
+    }
+    </script>
+</body>
+</html>
